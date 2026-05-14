@@ -13,9 +13,10 @@
     --dark-azure: #1d3557;         
 }
 
-html{
-    width: 100%;
-    /* overflow: hidden; */
+
+html {
+    max-width: 100%;
+    overflow-x: hidden; /* Esconde qualquer coisa que tente sair pela direita ou esquerda */
 }
 
 .main-header{
@@ -43,10 +44,6 @@ html{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 200px;
-}
-html {
-    max-width: 100%;
-    overflow-x: hidden; /* Esconde qualquer coisa que tente sair pela direita ou esquerda */
 }
 body {
     font-family: var(--font-family);
@@ -94,7 +91,7 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 120px;
+    margin-top: 190px;
     color: var(--dark-azure);
 }
 
@@ -106,13 +103,14 @@ main {
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
-}
-
-
-.hero button a{
     font-family: var(--font-family);
     font-weight: 600;
     color: white;
+}
+
+.hero h1{
+    font-size: 3.5rem;
+    letter-spacing: -2px;
 }
 
 .glow-sphere {
@@ -124,16 +122,32 @@ main {
     background: var(--brand-gradient); 
     border-radius: 50%;
     filter: blur(100px); 
-    opacity: 0.4;
+    opacity: 0.7;
     z-index: -1;         
 }
+
+.glow-sphere_right {
+    position: absolute;
+    top: 50px;          
+    left: -150px;      
+    width: 400px;
+    height: 400px;
+    background: var(--brand-gradient); 
+    border-radius: 50%;
+    filter: blur(100px); 
+    opacity: 0.7;
+    z-index: -1;         
+}
+
 .social-proof {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 13px;
+    font-size: 20px;
     color: #555;
+    padding-top: 50px;
     margin-top: 100px;
+    margin-bottom: 200px;
 }
 
 .avatars {
@@ -188,7 +202,7 @@ main {
     gap: 20px;
     flex-wrap: wrap;
     width: 100%;
-    padding: 0 20px; Adiciona um pouco de padding para evitar que os cards encostem nas bordas
+    padding: 0 20px; /*Adiciona um pouco de padding para evitar que os cards encostem nas bordas */
 }
 
 .features-header h1{

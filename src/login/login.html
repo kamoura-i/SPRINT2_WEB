@@ -1,44 +1,35 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <title>Login Simples</title>
-  <style>body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
-    }
-    input {
-      padding: 10px;
-      margin: 10px;
-      width: 250px;
-    }
-    button {
-      padding: 10px 20px;
-      background: blue;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-    #mensagem {
-      margin-top: 20px;
-      font-size: 18px;
-    }
-    </style>
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - JOVI</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
 
-  <h2>Faça Login</h2>
+    <div class="login-card">
+        <div class="logo-jovi">JOVI</div>
+        <h2>Acesse sua conta</h2>
+        <p>Olá, entre com seus dados para continuar seus estudos.</p>
 
-  <input type="text" id="usuario" placeholder="Usuário">
-  <br>
-  <input type="password" id="senha" placeholder="Senha">
-  <br><br>
-  <button onclick="fazerLogin()">Entrar</button>
+        <div class="input-container">
+            <span class="material-symbols-outlined">person</span>
+            <input type="text" id="usuario" placeholder="Usuário">
+        </div>
 
-  <div id="mensagem"></div>
+        <div class="input-container">
+            <span class="material-symbols-outlined">lock</span>
+            <input type="password" id="senha" placeholder="Senha">
+        </div>
 
-<script src="../js/script.js"> </script>
+        <button onclick="fazerLogin()">Entrar</button>
+
+        <div id="mensagem"></div>
+    </div>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
