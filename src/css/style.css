@@ -13,6 +13,11 @@
     --dark-azure: #1d3557;         
 }
 
+html{
+    width: 100%;
+    /* overflow: hidden; */
+}
+
 .main-header{
     display: flex;
     justify-content: space-between;
@@ -158,15 +163,20 @@ main {
     flex-direction: column;
     align-items: center;
     margin-top: 120px;
+    margin-top: 140px;
 }
+
+
+
+
 .features-header{
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Isso força os filhos a irem para a esquerda */
+    align-items: center; /* Isso força os filhos a irem para a esquerda */
     width: 100%;            
     max-width: 1000px;       
-    margin-bottom: 40px;
-    text-align: left;        /* Alinhamento do texto */
+    margin-bottom: 60px;
+    text-align: left;       /*Alinhamento do texto */
 }
 
 
@@ -182,7 +192,8 @@ main {
 }
 
 .features-header h1{
-    text-align: left;
+    font-size: 45px;
+    text-align: center;
     color: var(--dark-azure);
 }
 
